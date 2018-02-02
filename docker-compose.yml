@@ -1,0 +1,22 @@
+version: "3"
+
+services: 
+
+    neo4j:
+        image: cbleker/neo4j-biocyc-ecoli
+        environment:
+            - NEO4J_AUTH=none
+        ports:
+            - "7474:7474"
+            - "1337:1337"
+            - "7687:7687"
+        volumes:
+            - $HOME/neo4j/data:/data 
+
+       
+    notebook:
+        image:  cbleker/jupyter-graph-notebook:bnv
+        ports:
+            - "8888:8888"
+        links:
+            - neo4j:neo4j
