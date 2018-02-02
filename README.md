@@ -1,7 +1,7 @@
 # ecocyc notebook
 
 ## Description
-This app contains a neo4j server and a jupyter-notebook interface. 
+This app contains a neo4j server and a jupyter-notebook interface to a parsed version of [EcoCyc](https://ecocyc.org/). 
 
 ## Starting
 
