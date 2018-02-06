@@ -26,11 +26,9 @@ Open your browser at the http://localhost:8888/?token=... link printed to the te
  
 to find the correct link. 
 
-For data persistence between images for the neo4j database, there is a volume on the host at `$HOME/neo4j/data`. 
-
 ### Usage
 
-See example.ipynb as an example notebook to explore the graph. You can upload it to your Jupyter home and run the cells immediately. 
+See `examples/example.ipynb` as an example notebook to explore the graph. You should be able to run the cells immediately. 
 
 ### To do list
 
